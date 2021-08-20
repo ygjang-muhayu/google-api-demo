@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<link href="webjars/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+		<script src="webjars/jquery/3.3.1-1/jquery.min.js"></script>
+		<script src="webjars/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="js/index.js"></script>
+		<title>Hello Spring Boot and Google Drive</title>
+	</head>
+	<body>
+		<div id="pages">
+			<div class="btn-group" role="group">
+				<button data-toggle="collapse" data-target="#uploadFile" class="btn btn-primary">Simple Upload Demo</button>
+				<button data-toggle="collapse" data-target="#fileList" class="btn btn-primary">File List Demo</button>
+			</div>
+			<div class="collapse" id="uploadFile">
+				<div class="card card-body" id="simpleUpload">
+				Click
+				<button class="btn btn-secondary">Click to upload File</button>
+				</div>
+			</div>
+			<div class="collapse" id="fileList">
+				<div class="card card-body">
+					<button calss="btn btn-primary" id="refreshFileButton">refresh</button>
+					<ul class="list-group" id="fileListcontainer">
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
